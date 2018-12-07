@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Save the Child</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Denuncie</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Quem Somos</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contato</a></li>
+            <img class="menu__hamburguinho" src="img/menu.png" alt="Menu Hamburguer">
+        </ul>
+    </nav>
+    <header class="header">
+        <section class="banner">
+            <h1 class="banner__titulo">Abuso Infantil é Crime <br>Denuncie</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+
+            <h2 class="info__grafico">Perfil das Vítimas</h2>
+
+            <div class="container">
+                <div class="col">
+                    <div class="percent-circle pc1" data-percent="20">
+                        <svg>
+                            <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                        </svg>
+                    </div>
+                    <p>Meninos</p>
+                </div>
+                <div class="col">
+                    <div class="percent-circle pc1" data-percent="80">
+                        <svg>
+                            <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                        </svg>
+                    </div>
+                    <p>Meninas</p>
+                </div>
+                <div class="col">
+                    <div class="percent-circle pc1" data-percent="60">
+                        <svg>
+                            <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                        </svg>
+                    </div>
+                    <p>7 a 13 anos</p>
+                </div>
+            </div>
+
+            <svg class="hidden">
+                <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="inner"></circle>
+            </svg>
+
+            <div class="my__chart">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="informations">Como Prevenir</h2>
+            <div class="container__informations">
+                <div class="col__text" data-aos="fade-up">
+                    <a href="https://www.tecmundo.com.br/dispositivos-moveis/126200-aprenda-7-maneiras-configurar-controle-pais-iphone-criancas.htm"
+                        target="_blank">
+                        <img class="text__01" src="./img/informations-01.jpg">
+                        <h3>Controle Online</h3>
+                        <p>7 maneiras de configurar o controle dos pais no Smartphone das crianças</p>
+                    </a>
+                </div>
+                <div class="col__text" data-aos="fade-up">
+                    <a href="https://www.spyzie.com/br/parental-controls/free-parental-control-apps-for-android.html"
+                        target="_blank">
+                        <img class="text__01" src="./img/informations-02.jpg">
+                        <h3>Conteúdo Adulto</h3>
+                        <p>Como evitar que crianças tenham acesso a conteúdo adulto na Internet</p>
+                    </a>
+                </div>
+                <div class="col__text" data-aos="fade-up">
+                    <a href="" target="_blank">
+                        <img class="text__01" src="./img/informations-03.jpg">
+                        <h3>Denuncie, não tenha medo</h3>
+                        <p>Sua denuncia será mantida em sigilo e sua atitude vai salvar o futuro de uma criança</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+    </main>
+    <!-- form -->
+    <h2 class="report">Faça sua Denuncia</h2>
+    <div class="container__report"></div>
+    <form action="#" method="GET" class="form-report">
+        <input type="text" name="name" id="InputName" placeholder="Seu Nome">
+        <select class="InputUf" name="dropdown">
+            <option value="">Selecione seu estado</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select>
+        </div>
+        <input type="text" name="City" id="InputCity" placeholder="Sua Cidade">
+        <textarea id="InputTextarea" placeholder="Sua Denuncia"></textarea>
+
+        <div class="form-button">
+            <button type="submit">Enviar Mensagem</button>
+        </div>
+    </form>
+    </section>
+    <!-- contact -->
+    <section>
+        <div class="contact">
+            <div class="container">
+                <div class="contact__col">
+                    <h3>Onde Estamos</h3>
+                    <p>
+                        Florianópolis - SC
+                        <br>
+                        E-mail: contato@contato.com
+                        <br>
+                        Telefone : 00 0 0000.0000
+                        <br>
+                        Atendimento : Online
+                    </p>
+                </div>
+                <div class="contact__col">
+                    <h3>Acompanhe</h3>
+                    <ul class="social__medias">
+                        <li>
+                            <a href="#" class="btn-social">
+                                <img class="btn-social-icon" src="img/facebook-logo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social">
+                                <img class="btn-social-icon" src="img/twitter-logo.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social">
+                                <img class="btn-social-icon" src="img/instagram-logo.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__col">
+                    <h3>Sobre</h3>
+                    <p>
+                        Instituição para combater a <br>exploração sexual infantil
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer__create">
+        <div>
+            <p>Copyright 2018 | Silvia Dorosz</p>
+        </div>
+    </footer>
+    <script src="./js/Chart.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
